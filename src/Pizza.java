@@ -7,7 +7,7 @@ public class Pizza {
     private String namePizza;
     private double price;
     private List<String> ingredients;
-    //Scanner scanner = new Scanner(System.in);
+
 
     public Pizza(String namePizza, double price, List<String> ingredients) {
         this.namePizza = namePizza;
@@ -18,8 +18,7 @@ public class Pizza {
     public void prepare() {
         System.out.println("La pizza " + namePizza + " se prepara con los siguientes ingredientes: ");
         System.out.println(ingredients);
-        //System.out.println("Presiona Enter para confirmar que la pizza y sus ingredientes son correctos.");
-        //scanner.nextLine();
+
     }
 
     @Override
@@ -72,10 +71,5 @@ public class Pizza {
             chileTopping.agregar(miPizzaItaliana);
             Topping cebollaTopping = new Topping("cebolla");
             cebollaTopping.agregar(miPizzaItaliana);
-
         }
-
-    }
-
-
-
+}
